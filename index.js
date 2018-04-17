@@ -21,11 +21,11 @@ function deepestChild() {
   for(var i = 0; i < begin.length; i++) {
     begin[i].innerHTML
   }*/
-  var $target = $('#SearchHere').children(),
+  var $target = $('#grand-node').children(),
     $next = $target;
 
 while( $next.length ) {
   $target = $next;
   $next = $next.children();
-} return 
+} return  $target.attr('id')
 }
