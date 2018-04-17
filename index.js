@@ -20,5 +20,6 @@ function deepestChild() {
   var store
   for(var i = 0; i < begin.length; i++) {
     store = begin[i].innerHTML
-  } return store
+    return store
+  }
 }
