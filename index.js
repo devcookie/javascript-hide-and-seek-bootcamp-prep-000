@@ -16,9 +16,16 @@ function increaseRankBy(n) {
 }
 
 function deepestChild() {
-  var begin = document.getElementById('grand-node')
+  /*var begin = document.getElementById('grand-node')
   var store = []
   for(var i = 0; i < begin.length; i++) {
     begin[i].innerHTML
-  }
+  }*/
+  var $target = $('#SearchHere').children(),
+    $next = $target;
+
+while( $next.length ) {
+  $target = $next;
+  $next = $next.children();
+} return 
 }
