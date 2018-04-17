@@ -2,8 +2,8 @@ function getFirstSelector(selector) {
   return document.querySelector(selector)
 }
 
-function nestedTarget() {
-  return document.querySelector('#nested .target')
+function nestedTarget(selector1, selector2) {
+  return document.querySelector(`${selector1} ${selector2})
 }
 
 function increaseRankBy(n) {
