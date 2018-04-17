@@ -19,6 +19,6 @@ function deepestChild() {
   var begin = document.getElementById('app').querySelector('#grand-node')
   var store = []
   for(var i = 0; i < begin.length; i++) {
-    store.push(begin[i])
+    store.push(begin[i].innerHTML)
   } return store
 }
