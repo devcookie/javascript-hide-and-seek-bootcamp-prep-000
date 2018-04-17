@@ -22,10 +22,10 @@ function deepestChild() {
     begin[i].innerHTML
   }*/
   var target = $('#grand-node').children(),
-    $next = target;
+    var next = target;
 
-while( $next.length ) {
-  target = $next;
-  $next = $next.children();
+while( next.length ) {
+  target = next;
+  next = next.children();
 } return  target.attr('id')
 }
