@@ -22,6 +22,6 @@ function deepestChild(id, element) {
     begin[i].innerHTML
   }*/
   var nodes = document.querySelectorAll(`#${id} ${element}`);
-  if(!nodes.length){ return false;}
+  //if(!nodes.length){ return false;}
   return nodes[nodes.length-1];
 }
