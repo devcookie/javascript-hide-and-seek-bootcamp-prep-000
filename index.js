@@ -21,11 +21,5 @@ function deepestChild() {
   for(var i = 0; i < begin.length; i++) {
     begin[i].innerHTML
   }*/
-  var target = $('#grand-node').children(),
-    var next = target;
-
-while( next.length ) {
-  target = next;
-  next = next.children();
-} return  target.attr('id')
+  
 }
